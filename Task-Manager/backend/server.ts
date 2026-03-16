@@ -116,4 +116,4 @@ io.on('connection', (socket) => {
 export { io };
 
 const PORT = process.env.PORT || 5000;
-httpServer.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+httpServer.listen(Number(PORT), '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
