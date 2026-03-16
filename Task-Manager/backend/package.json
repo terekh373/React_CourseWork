@@ -5,7 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'no build needed'",
+    "start": "node --no-warnings --loader ts-node/esm server.ts",
+    "dev": "node --no-warnings --loader ts-node/esm server.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +21,9 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.5",
     "multer": "^2.1.1",
-    "socket.io": "^4.8.3"
+    "socket.io": "^4.8.3",
+    "ts-node": "^10.x.x",
+    "typescript": "^5.x.x"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
