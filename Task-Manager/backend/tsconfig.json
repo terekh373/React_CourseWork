@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",           // або "ES2022", але NodeNext краще для Node.js
-    "moduleResolution": "NodeNext", // обов'язково!
-    "verbatimModuleSyntax": true,   // можна залишити true
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true,
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
