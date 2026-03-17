@@ -118,7 +118,7 @@ const Register: React.FC = () => {
                           type="text"
                           placeholder="Ваш унікальний логін"
                           value={username}
-                          onChange={e => setUsername(e.target.value)}
+                          onChange={e => setUsername(e.target.value.replace(/\s/g, ''))}
                           required
                           className="bg-white bg-opacity-25 border-0 text-white placeholder-white placeholder-opacity-75"
                         />
