@@ -32,6 +32,10 @@ router.post('/register', async (req, res) => {
     return res.status(400).json({ message: passwordError });
   }
 
+  if (/\s/.test(username)) {
+    return res.status(400).json({ message: 'Логін не може містити пробіли' });
+  }
+
   if (!displayName || displayName.length < 3) {
     return res.status(400).json({ message: 'Ник должен быть не короче 3 символов' });
   }
@@ -141,6 +145,10 @@ router.put('/change-username', authMiddleware, async (req: any, res) => {
 
   if (!newUsername || newUsername.length < 3) {
     return res.status(400).json({ message: 'Новий логін повинен бути не коротшим 3 символів' });
+  }
+
+  if (/\s/.test(newUsername)) {
+    return res.status(400).json({ message: 'Логін не може містити пробіли' });
   }
 
   try {
