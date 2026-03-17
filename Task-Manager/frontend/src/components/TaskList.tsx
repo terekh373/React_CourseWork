@@ -1499,7 +1499,7 @@ const TaskList: React.FC<TaskListProps> = ({ token }) => {
             )}
 
             {/* Стэк аватарок участников с онлайн-индикатором */}
-            {activeBoard && activeBoard.members.length > 0 && (
+            {activeBoard && (activeBoard?.members?.length ?? 0) > 0 && (
               <div className="d-flex align-items-center">
                 {activeBoard.members.slice(0, 5).map((m: UserInfo, i: number) => (
                   <div key={m._id} style={{ marginLeft: i === 0 ? 0 : -8, zIndex: 5 - i, position: 'relative' }} title={m.displayName}>
