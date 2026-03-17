@@ -443,7 +443,7 @@ const EditProfile: React.FC<EditProfileProps> = ({ token }) => {
                                                 <Form.Control
                                                     type="text"
                                                     value={newUsername}
-                                                    onChange={e => setNewUsername(e.target.value)}
+                                                    onChange={e => setNewUsername(e.target.value.replace(/\s/g, ''))}
                                                     className="bg-white bg-opacity-25 border-0 text-white"
                                                 />
                                             </InputGroup>
