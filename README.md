@@ -10,6 +10,8 @@
 
 🔗 **[Live Demo →](https://react-course-work-mu.vercel.app)**
 
+> 🏆 **1st place out of 5 course projects** — built solo, while the other entries were teams of 2+
+
 > A full-stack Kanban task manager with real-time collaboration via WebSockets.  
 > Frontend on **Vercel** · Backend on **Render.com** · Database on **MongoDB Atlas** — available 24/7
 
@@ -154,4 +156,4 @@ npm start
 
 ## 👤 Author
 
-**Anton Tereshchenko** — [github.com/terekh373](https://github.com/terekh373) · [LinkedIn](https://www.linkedin.com/in/anton-tereshchenko-o) · [Live Demo](https://react-course-work-mu.vercel.app)
+**Anton Tereshchenko** — [github.com/terekh373](https://github.com/terekh373) · [LinkedIn](https://www.linkedin.com/in/anton-e-tereshchenko) · [Live Demo](https://react-course-work-mu.vercel.app)
